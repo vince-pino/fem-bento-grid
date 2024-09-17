@@ -950,6 +950,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:relative {
     position: relative;
   }
@@ -994,6 +998,14 @@ video {
     height: 400px;
   }
 
+  .lg\:h-\[3px\] {
+    height: 3px;
+  }
+
+  .lg\:h-\[380px\] {
+    height: 380px;
+  }
+
   .lg\:max-h-\[200px\] {
     max-height: 200px;
   }
@@ -1024,6 +1036,14 @@ video {
 
   .lg\:max-h-\[500px\] {
     max-height: 500px;
+  }
+
+  .lg\:max-h-\[20px\] {
+    max-height: 20px;
+  }
+
+  .lg\:max-h-\[230px\] {
+    max-height: 230px;
   }
 
   .lg\:w-\[200px\] {
@@ -1084,6 +1104,42 @@ video {
 
   .lg\:w-12 {
     width: 3rem;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .lg\:w-\[px\] {
+    width: px;
+  }
+
+  .lg\:w-\[184px\] {
+    width: 184px;
+  }
+
+  .lg\:min-w-full {
+    min-width: 100%;
+  }
+
+  .lg\:min-w-\[\] {
+    min-width: ;
+  }
+
+  .lg\:min-w-\[200px\] {
+    min-width: 200px;
+  }
+
+  .lg\:min-w-\[180px\] {
+    min-width: 180px;
+  }
+
+  .lg\:min-w-\[184px\] {
+    min-width: 184px;
   }
 
   .lg\:max-w-\[500px\] {
@@ -1152,6 +1208,10 @@ video {
 
   .lg\:overflow-clip {
     overflow: clip;
+  }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .lg\:p-36 {
