@@ -14,56 +14,80 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    @media screen and (min-width: 1024px) {
+      .item1 { grid-area: div1; }
+      .item2 { grid-area: div2; }
+      .item3 { grid-area: div3; }
+      .item4 { grid-area: div4; }
+      .item5 { grid-area: div5; }
+      .item6 { grid-area: div6; }
+      .item7 { grid-area: div7; }
+      .item8 { grid-area: div8; }
+  
+      .container {
+        display: grid;
+        grid-template-areas: 
+          "div7 div1 div1 div4"
+          "div7 div1 div1 div4"
+          "div7 div2 div3 div4"
+          "div8 div2 div3 div4"
+          "div8 div6 div5 div5"
+          "div8 div6 div5 div5";
+        gap: 20px;
+      } 
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="font-['DM Sans'] h-full w-full bg-purple-100">
+<body class="font-['DM Sans'] h-full w-full bg-purple-100 sm:p-16 md:p-24 lg:p-36">
 
-  <main class="py-8 px-4">
+  <main class="container py-8 px-4 flex flex-col gap-4">
 
-    <div class="bg-purple-600 p-10 rounded-xl max-w-[370px]">
+    <div class="item1 bg-purple-600 p-10 rounded-xl">
       <h1 class="text-5xl font-medium text-white text-center mb-4">
         Social Media <span class="text-yellow-400">10x</span> Faster with AI
       </h1>
-      <img src="./assets/images/illustration-five-stars.webp" alt="">
+      <img class="m-auto" src="./assets/images/illustration-five-stars.webp" alt="">
       <p class="text-yellow-100 text-center mt-1">
         Over 4,000 5-star reviews
       </p>
     </div>
   
-    <div class="py-5 px-4 bg-white rounded-xl max-w-[370px]">
-      <img class="rounded-full shadow-xl" src="assets/images/illustration-multiple-platforms.webp" alt="">
+    <div class="item2 py-5 px-4 bg-white rounded-xl lg:max-w-full lg:overflow-hidden">
+      <img class="rounded-full shadow-xl lg:w-[300px] lg:max-w-none" src="assets/images/illustration-multiple-platforms.webp" alt="">
       <h2 class="pt-3 text-2xl leading-none font-semibold">
         Manage multiple accounts and platforms.
       </h2>
     </div>
   
-    <div class="py-5 px-4 bg-amber-400 rounded-xl max-w-[370px] max-h-[250px] overflow-hidden">
+    <div class="item3 py-5 px-4 bg-amber-400 rounded-xl w-full max-h-[250px] lg:max-h-[220px] overflow-clip">
       <h2 class="text-2xl mb-3 leading-none font-semibold">
         Maintain a consistent posting schedule.
       </h2>
-      <img class="w-9/12" src="assets/images/illustration-consistent-schedule.webp" alt="calendar image">
+      <img class="w-9/12 lg:w-[200px]" src="assets/images/illustration-consistent-schedule.webp" alt="calendar image">
     </div>
   
-    <div class="py-5 px-4 bg-purple-300 rounded-xl max-w-[370px]">
-      <h3 class="text-2xl mb-34 text-center font-semibold">
+    <div class="item4 py-5 px-4 bg-purple-300 rounded-xl lg:max-w-[220px] lg:overflow-clip">
+      <h3 class="text-2xl mb-34 text-center font-semibold lg:mb-4">
         Schedule to social media.
       </h3>
-      <img src="assets/images/illustration-schedule-posts.webp" alt="shedule post image">
-      <p class="text-lg text-center px-6 leading-none mt-4">
+      <img class="lg:h-[300px] lg:max-w-none" src="assets/images/illustration-schedule-posts.webp" alt="shedule post image">
+      <p class="text-lg text-center px-6 leading-none mt-4 lg:text-start lg:px-0">
         Optimize post timings to publish content at the perfect time for your audience.
       </p>
     </div>
     
-    <div class="py-5 px-4 bg-purple-700 rounded-xl max-w-[370px]">
-      <img class="m-auto w-3/4" src="assets/images/illustration-grow-followers.webp" alt="growth followers image">
+    <div class="item5 py-5 px-4 bg-purple-700 rounded-xl lg:max-h-[220px] lg:flex">
+      <img class="m-auto w-3/4 lg:w-2/5" src="assets/images/illustration-grow-followers.webp" alt="growth followers image">
       <h3 class="text-center text-white text-3xl leading-none font-medium w-3/4 m-auto mt-10">
         Grow followers with non-stop content.
       </h3>
     </div>
   
-    <div class="py-5 px-5 bg-white rounded-xl max-w-[370px]">
+    <div class="item6 py-5 px-5 bg-white rounded-xl lg:max-h-[220px]">
       <span class="text-5xl font-bold">
         >56% 
       </span>
@@ -73,14 +97,14 @@
       <img class="w-1/2" src="assets/images/illustration-audience-growth.webp" alt="audience growth image">
     </div>
     
-    <div class="py-6 px-6 bg-orange-50 rounded-xl max-w-[370px]">
+    <div class="item7 py-6 px-6 bg-orange-50 rounded-xl lg:flex lg:flex-col lg:justify-center lg:items-center">
       <h2 class="text-3xl font-bold leading-none mb-4">
         Create and schedule content <span class="text-purple-700 font-semibold italic">quicker.</span>
       </h2>
       <img class="w-7/12" src="assets/images/illustration-create-post.webp" alt="create post image">
     </div>
   
-    <div class="py-6 px-6 bg-amber-400 rounded-xl max-w-[370px]">
+    <div class="item8 py-6 px-6 bg-amber-400 rounded-xl">
       <h3 class="text-3xl font-bold leading-none mb-4">
         Write your content using AI.
       </h3>
